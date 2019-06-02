@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@drawable/list_view_color"
+    tools:context="collegeek.example.collegeek.myapplication.Item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight=".6"
+        android:weightSum="1">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="1"
+                >
+    <TextView
+        android:id="@+id/collegeName"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        style="@style/ListTitleText"
+         />
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_favorite"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/imgFavorite" />
+
+    </LinearLayout>-->
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight=".2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".06"
+            android:id="@+id/imgLocation"
+            android:layout_gravity="top"
+            android:scaleType="fitStart"
+            android:gravity="top"
+            android:src="@mipmap/ic_location" />
+
+
+        <TextView
+            android:id="@+id/locationPlace"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".49"
+            style="@style/ListItemBoldText" />
+
+
+
+        <TextView
+            android:id="@+id/textDeadline"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".18"
+            style="@style/ListItemText"
+            android:text="Deadline " />
+
+    <TextView
+        android:id="@+id/collegeDeadline"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:layout_weight=".27"
+        style="@style/ListItemBoldText" />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight=".2"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/collegeTuition"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight=".5"
+                    style="@style/ListItemBoldText" />
+
+            <TextView
+                android:id="@+id/textTuition"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                style="@style/ListItemText"
+                android:text="In-State | Out-State Tuition "
+                />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/rDExpenditure"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight=".5"
+                    android:text="3.25 million"
+                    style="@style/ListItemBoldText" />
+
+    <TextView
+        android:id="@+id/textRD"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:layout_gravity="center"
+        android:gravity="center"
+        style="@style/ListItemText"
+        android:text="R&amp;D Expenditure (in 1000$) "
+       />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"/>
+
+
+</LinearLayout>

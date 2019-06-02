@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ColleGeek</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_item_list">Items</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="admission_filter">
+        <item>Bachelor\'s Degree</item>
+        <item>Master\'s Degree</item>
+        <item>PHD</item>
+    </string-array>
+
+    <string-array name="field_filter">
+        <item>All</item>
+        <item>Architecture</item>
+        <item>Aviation</item>
+        <item>Chemical Engineering</item>
+        <item>Chemistry</item>
+        <item>Civil</item>
+        <item>Computer Engineering</item>
+        <item>Computer Science</item>
+        <item>Electrical Engineering</item>
+        <item>Electronics Communication</item>
+        <item>Engineering Mamangement</item>
+        <item>Industrial Engineering</item>
+        <item>Management in information Systems</item>
+        <item>Mechanical Engineering</item>
+        <item>Physics</item>
+     </string-array>
+    <string-array name="semester_filter">
+        <item>Fall [ Aug - Dec ]</item>
+        <item>Spring [ Jan - May ]</item>
+        <item>Summer [ May - July ]</item>
+    </string-array>
+
+    <string-array name="sort_actions">
+        <item>Sort by name</item>
+        <item>Sort by deadline</item>
+        <!--<item>Sort by in-state tuition</item>
+        <item>Sort by out-state tuition</item>-->
+        <item>Sort by R&amp;D expenditure</item>
+    </string-array>
+
+    <string-array name="state_filter">
+        <item>All</item>
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </string-array>
+
+    <string-array name="college_type_filter">
+        <item>Both</item>
+        <item>Public</item>
+        <item>Private</item>
+    </string-array>
+
+    <string-array name="difficulty_filter">
+        <item>All</item>
+        <item>Easy [ GRE &#60; 290 ]</item>
+        <item>Average [ GRE &#60; 300 ]</item>
+        <item>Above Average [ GRE &#60; 320 ]</item>
+        <item>Difficult [ GRE &#62;&#61; 320 ]</item>
+    </string-array>
+
+
+    <string name="difficulty_filter_title">Admission Difficulty</string>
+    <string name="state_spinner_title">State</string>
+    <string name="college_type_filter_title">College Type</string>
+    <string name="admission_spinner_title">Admission</string>
+    <string name="field_spinner_title">Field of Study</string>
+    <string name="semester_filter_title">Academic Term</string>
+    <string name="scholorship_type_spinner_title">Scholorship Type</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_item">Item</string>
+    <string name="title_activity_recycler_view_detail">RecyclerViewDetailActivity</string>
+
+    <string name="title_activity_custom_detail_adapter">CustomDetailAdapter</string>
+    <string name="title_activity_main_tab">MainTab</string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_college_detail">College Details</string>
+    <string name="title_activity_no_result">NoResultActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>

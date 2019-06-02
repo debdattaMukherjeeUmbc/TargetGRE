@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background"
+android:orientation="vertical"
+tools:context="collegeek.example.collegeek.scholoship.activity.MainTabActivity">
+
+<include
+    android:id="@+id/tool_bar"
+    layout="@layout/tool_bar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    />
+
+<collegeek.example.collegeek.scholoship.tab.SlidingTabLayout
+    android:id="@+id/tabs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/blue"
+    android:elevation="2dp"/>
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="collegeek.example.collegeek.scholoship.activity.MainTabActivity" />
+
+
+
+</LinearLayout>

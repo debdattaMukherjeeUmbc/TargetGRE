@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar_detail"
+        layout="@layout/tool_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".13"
+        android:weightSum="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="College Name"
+            android:id="@+id/textCollege"
+            android:autoLink="web"
+            android:layout_weight=".55"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:typeface="sans"
+            android:background="@color/background_grey_light"
+            />
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".45"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="@color/background_grey_light">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:id="@+id/imgLocation"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_location" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="1"
+                android:layout_weight=".8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:typeface="sans"
+                    android:text="Large Text"
+                    android:id="@+id/textLocation" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:text="LOCATION"
+                    android:id="@+id/titleLocation"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="10dp"
+                    android:typeface="sans" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".13"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:background="@color/background_grey_dark">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".25"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:typeface="sans"
+                android:text="Large"
+                android:id="@+id/textType" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:paddingLeft="10dp"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:typeface="sans"
+                android:gravity="center"
+                android:text="TYPE"
+                android:id="@+id/titleType" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:id="@+id/imgTuition"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_tuition" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans"
+                android:text="Large Text"
+                android:id="@+id/textTuition" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="IN-STATE | OUT-OF-STATE TUITION"
+                android:id="@+id/titleTuition"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".13"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:background="@color/background_grey_light"
+        android:gravity="top">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_students" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".35"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="Large"
+                android:id="@+id/textGradByNoOfStudents"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="GRAD STUDENTS / TOTAL STUDENTS"
+                android:id="@+id/titleGradByNoOfStudents"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".7"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:id="@+id/imgFemale"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_female" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:text="64%"
+                    android:id="@+id/titleFemale"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:typeface="sans"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:id="@+id/imgMale"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_male" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:text="34%"
+                    android:id="@+id/titleMale"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:text="STUDENT RATIO"
+                android:layout_gravity="center"
+                android:id="@+id/titleStudentRatio"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+        </LinearLayout>-->
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:background="@color/background_grey_light">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_deadline" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="1"
+                android:layout_weight=".7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:text="Large Text"
+                    android:id="@+id/textDeadline"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:text="APPLICATION DEADLINE"
+                    android:id="@+id/titleDeadline"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="10dp"
+                    android:typeface="sans"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".13"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:background="@color/background_grey_dark">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="Rate"
+                android:id="@+id/textToeflIBT"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="MINIMUM TOEFL IBT"
+                android:layout_gravity="center"
+                android:id="@+id/titleToeflIBT"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <!--<ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_students" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".35"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="Large"
+                android:id="@+id/textGradByNoOfStudents"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="GRAD STUDENTS / TOTAL STUDENTS"
+                android:id="@+id/titleGradByNoOfStudents"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+        </LinearLayout>
+-->
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="Rate"
+                android:id="@+id/textToeflPBT"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="MINIMUM TOEFL PBT"
+                android:layout_gravity="center"
+                android:id="@+id/titleToeflIPBT"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+        </LinearLayout>
+        <!--<LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".275"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="Text"
+                android:id="@+id/textApplicationFee"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="APPLICATION FEE"
+                android:id="@+id/titleApplicationFee"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+        </LinearLayout>-->
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="Rate"
+                android:id="@+id/textIelts"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="MINIMUM IELTS"
+                android:layout_gravity="center"
+                android:id="@+id/titleToefIelts"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".13"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:background="@color/background_grey_light">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="Large Text"
+                android:id="@+id/textAdmissionDiff"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="ADMISSION DIFFICULTY"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/titleAdmissionDiff"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <!--<LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".35"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="Text"
+                android:layout_gravity="center"
+                android:id="@+id/textInternationalGrad"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="PERCENT INTERNATIONAL GRAD"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/titleInternationalGrad"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+        </LinearLayout>
+-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="Text"
+                android:id="@+id/textApplicationFee"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="APPLICATION FEE"
+                android:id="@+id/titleApplicationFee"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_weight=".33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="Text"
+                android:id="@+id/textResearchExp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="R&amp;D EXPENDITURE (1000$)"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/titleResearchExp"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".23"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:background="@color/background_grey_dark"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight=".2"
+            android:weightSum="1"
+>
+
+            <TextView
+                android:id="@+id/architecture"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".25"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans"
+                android:text="Architecture" />
+
+            <TextView
+                android:id="@+id/aviation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".25"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans"
+                android:text="Aviation" />
+
+            <TextView
+                android:id="@+id/chemicalEngineering"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".25"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans"
+                android:text="Chemical" />
+            <TextView
+                android:id="@+id/chemistry"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".25"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans"
+                android:text="Chemistry" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight=".2"
+            android:weightSum="1"
+            >
+
+            <TextView
+                android:id="@+id/civil"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans"
+                android:text="Civil" />
+
+            <TextView
+                android:id="@+id/computerEngineering"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".4"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans"
+                android:text="Computer Engineering" />
+
+            <TextView
+                android:id="@+id/computerScience"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".4"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans"
+                android:text="Computer Science" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight=".2"
+            android:weightSum="1"
+            >
+            <TextView
+                android:id="@+id/electricalEngineering"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".5"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans"
+                android:text="Electrical Engineering" />
+            <TextView
+                android:id="@+id/electronicsCommunication"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".5"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:typeface="sans"
+                android:text="Electronics Communication" />
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight=".2"
+                android:weightSum="1"
+                >
+
+
+                <TextView
+                    android:id="@+id/engineeringManagement"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight=".5"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:typeface="sans"
+                    android:text="Engineering Management" />
+
+                <TextView
+                    android:id="@+id/industrialEngineering"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight=".5"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:typeface="sans"
+                    android:text="Industrial Engineering" />
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight=".2"
+                android:weightSum="1"
+                >
+
+                <TextView
+                    android:id="@+id/mechanicalEngineering"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight=".4"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:typeface="sans"
+                    android:text="Mechanical Engineering" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:id="@+id/informationSystems"
+                    android:gravity="center"
+                    android:layout_weight=".3"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:typeface="sans"
+                    android:text="MIS" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:id="@+id/physics"
+                    android:gravity="center"
+                    android:layout_weight=".3"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:typeface="sans"
+                    android:text="Physics" />
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".12"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:background="@color/background_grey_light">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:baselineAligned="false"
+            android:background="@color/background_grey_light">
+
+        <ImageView
+            android:id="@+id/imgWeb"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:src="@mipmap/ic_web" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:text="WEBSITE LINK"
+                android:paddingLeft="5dp"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+
+            </LinearLayout>
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:baselineAligned="false"
+            android:background="@color/background_grey_light">
+
+        <ImageView
+            android:id="@+id/imgCall"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:src="@mipmap/ic_call" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:text="CALL"
+                android:paddingLeft="5dp"
+                android:textColor="@color/dark_grey"
+                android:textSize="10dp"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
